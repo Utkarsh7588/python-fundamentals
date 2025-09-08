@@ -59,6 +59,9 @@ print(newline_str)
 path = r"C:\user\pwd"
 print(path)  # C:\user\pwd
 
+path = "c:\\user\\pwd\\"
+print(path)
+
 # File name example
 filename = "windows.txt"
 print(filename)

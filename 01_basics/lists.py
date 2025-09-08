@@ -21,6 +21,9 @@ print("After replacing Oolong Tea with Masala:", T_varieties)
 # Insert "Test" at index 1 (via slicing)
 T_varieties[1:1] = ["Test"]
 print("After inserting Test at index 1:", T_varieties)
+# if you dont add it as list then every letter will be added as seperate element in list example below
+
+T_varieties[1:1] = "Test" # ["Black Tea","T", "e", "s", "t", "Green Tea", "Oolong Tea", "White Tea"]
 
 # Append "Lemon" to the list
 T_varieties.append("Lemon")
