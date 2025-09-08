@@ -71,3 +71,67 @@ print("Squares:", squares)
 
 evens = [x for x in range(10) if x % 2 == 0]
 print("Even numbers:", evens)
+
+# -------------------------------
+# Python While Loops Explained
+# -------------------------------
+
+# 1. Basic while loop
+count = 1
+while count <= 5:  # loop runs while condition is True
+    print("Count:", count)
+    count += 1  # important: update variable to avoid infinite loop
+
+# 2. While loop with break
+n = 1
+while n <= 10:
+    if n == 5:
+        print("Breaking at", n)
+        break  # exits the loop completely
+    print("n:", n)
+    n += 1
+
+# 3. While loop with continue
+m = 0
+while m < 5:
+    m += 1
+    if m == 3:
+        print("Skipping", m)
+        continue  # skips the rest of this iteration
+    print("m:", m)
+
+# 4. Infinite loop with condition to stop
+# (Useful for input-driven programs)
+# Uncomment to test interactively
+# while True:
+#     text = input("Enter something (type 'exit' to stop): ")
+#     if text == "exit":
+#         print("Exiting loop...")
+#         break
+#     print("You entered:", text)
+
+# 5. while-else construct
+# else runs ONLY if loop exits normally (not by break)
+x = 1
+while x < 4:
+    print("x:", x)
+    x += 1
+else:
+    print("While loop completed without break")
+
+# 6. Nested while loops
+i = 1
+while i <= 3:  # outer loop
+    j = 1
+    while j <= 2:  # inner loop
+        print(f"i={i}, j={j}")
+        j += 1
+    i += 1
+
+# 7. Using pass in while loop
+k = 0
+while k < 3:
+    if k == 1:
+        pass  # placeholder, does nothing
+    print("k:", k)
+    k += 1
